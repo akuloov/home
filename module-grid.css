@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-regular-webfont.woff2'),
+         url('fonts/roboto-regular-webfont.woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-bold_0-webfont.woff2'),
+         url('fonts/roboto-bold_0-webfont.woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+.module-grid::after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.module-grid__cell-12 {
+	float: left;
+	width: 100%;
+}
+
+.module-grid__cell-11 {
+	float: left;
+	width: 91.66667%;
+}
+
+.module-grid__cell-10 {
+	float: left;
+	width: 83.33334%;
+}
+
+.module-grid__cell-9 {
+	float: left;
+	width: 75%;
+}
+
+.module-grid__cell-8 {
+	float: left;
+	width: 66.66667%;
+}
+
+.module-grid__cell-7 {
+	float: left;
+	width: 58.33334%;
+}
+
+.module-grid__cell-6 {
+	float: left;
+	width: 50%;
+}
+
+.module-grid__cell-5 {
+	float: left;
+	width: 41.66667%;
+}
+
+.module-grid__cell-4 {
+	float: left;
+	width: 33.33334%;
+}
+
+.module-grid__cell-3 {
+	float: left;
+	width: 25%;
+}
+
+.module-grid__cell-2 {
+	float: left;
+	width: 16.66667%;
+}
+
+.module-grid__cell-1 {
+	float: left;
+	width: 8.33334%;
+}
+
+/* с отступами. В данном случае класс "module-grid--gutters" согласно терминологии БЭМ (кстати, почитайте о ней, полезная штука!) является модификатором.
+А модификатор НЕ может применяться без названия самого блока. Т.к. в данном случае, у блока должно быть 2 класса: "module-grid  module-grid--gutters" */
+
+.module-grid--gutters {
+	margin: 0 -10px;
+}
+
+.module-grid--gutters > * {
+	padding: 0 10px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.header{
+    background-color: #cfe5ef;
+    
+}
+
+.container{
+    max-width: 1252px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header_content{
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.header_menu{
+    display: flex;
+    list-style-type: none;
+}
+
+.header_item{
+    position: relative;
+}
+
+.header_item::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #333;
+}
+
+.header_item:first-child:before{
+    display: none;
+}
+
+.header_enter{
+    margin-left: auto;
+    color: #333;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+.header_link,
+.header_enter,
+.header_sublink{
+    text-decoration: none;
+    color: #333;
+}
+
+.header_link{
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header_link:hover{
+    background-color: #fff;
+
+}
+
+.header_submenu{
+    position: absolute;
+    background-color: #fff;
+    white-space: nowrap;
+    font-size: 20px;
+    list-style-type: none;
+    padding: 0 20px;
+    display: none;
+}
+
+.header_item:hover .header_submenu{
+    display: block;
+ 
+}
+
+.header_item:hover .header_link{
+    background-color: #fff;
+    transition: 0.9s;
+}
+
+.main_nav{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.name{
+    margin-bottom: 0;
+}
+
+.main{
+ 
+}
+
+.line{
+    margin-top: 0;
+    padding: 0;
+}
+
+.first-grid{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.first-grid__item{
+    height: 48px;
+    background-color: #e2e2e2;
+    border: 1px solid #9f9f9f;
+}
+
+.second-grid{
+    
+}
+
+.margin-right{
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.margin-left{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.review{
+    margin-top: 30px;
+}
+
+.client{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
